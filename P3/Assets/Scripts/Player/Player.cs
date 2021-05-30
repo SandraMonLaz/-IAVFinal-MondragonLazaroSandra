@@ -35,12 +35,17 @@ public class Player : MonoBehaviour
     public double aumentoDiversion { get; set; }
     public double aumentoBaño { get; set; }
 
+    Animator animator;
+
     void Start()
     {
         dinero = 100;
+
+        tiempoTick = 0.2f;
         tiempoActual = Time.time;
         tiempoTotal = Time.time;
-        tiempoTick = 0.2f;
+
+        animator = GetComponent<Animator>();
     }
     // Update is called once per frame
     void Update()
@@ -90,7 +95,7 @@ public class Player : MonoBehaviour
     void Idle()
     {
         Debug.Log("Idle");
-        //Animacion idle
+        animator.SetInteger("estado", 0);
     }
     void Andar()
     {
@@ -98,6 +103,7 @@ public class Player : MonoBehaviour
         if(sueño > 0)
             sueño -= restaSueño / 3;
         //ANimacion Andar
+        animator.SetInteger("estado", 1);
     }
     void Lavar()
     {
@@ -126,6 +132,8 @@ public class Player : MonoBehaviour
         if (baño > 0)
             baño -= restaBaño;
         //Animacion comer
+        animator.SetInteger("estado", 2);
+
     }
 
     void JugarOrdenador()

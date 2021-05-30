@@ -20,11 +20,13 @@ public class ObjetoInteractuable : MonoBehaviour
     /// </summary>
     public virtual void Interactuar()
     {
+        boton.gameObject.SetActive(true);
         Debug.Log(gameObject.name);
     }
     public void VeAlDestino()
     {
         navMesh.destination = transform.position;
+        player.estado = Player.Estado.andar;
         boton.gameObject.SetActive(false);
     }
 }

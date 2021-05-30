@@ -18,7 +18,6 @@ public class CamaraClick : MonoBehaviour
                 if(interactuable != null)
                 {
                     interactuable.Interactuar();
-
                 }
             }
         }
