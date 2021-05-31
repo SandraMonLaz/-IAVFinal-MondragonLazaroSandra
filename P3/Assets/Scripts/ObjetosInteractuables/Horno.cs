@@ -8,13 +8,16 @@ public class Horno : DispensadorComida
     void Start()
     {
         texto = "Preparar comida";
+        gasto = 20;
     }
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Player")
+        if (other.gameObject.name == "Player" && activo)
         {
             player.estado = Player.Estado.comer;
             player.aumentoHambre = aumentoHambre;
+            player.dinero -= gasto;
+            algoUsandose = true;
 
             plane.SetActive(true);
             Invoke("DejarComer", 5f);
@@ -23,7 +26,7 @@ public class Horno : DispensadorComida
 
     void DejarComer()
     {
-        player.estado = Player.Estado.idle;
+        base.DejarInteractuar();
         plane.SetActive(false);
     }
 

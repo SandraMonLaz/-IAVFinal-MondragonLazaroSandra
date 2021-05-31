@@ -15,7 +15,7 @@ public class CamaraClick : MonoBehaviour
             if (Physics.Raycast(ray, out hit, 100.0f) && hit.transform.gameObject != null)
             {
                 ObjetoInteractuable interactuable = hit.transform.GetComponent<ObjetoInteractuable>();
-                if(interactuable != null)
+                if(interactuable != null && !interactuable.AlgoUsandose())
                 {
                     interactuable.Interactuar();
                 }
