@@ -39,6 +39,8 @@ public class Player : MonoBehaviour
     [SerializeField] Scrollbar sliderBaño;
 
     [SerializeField] Text textoDinero;
+    [SerializeField] GameObject panelMuerte;
+    [SerializeField] GameObject panelVida;
 
     public double aumentoHambre { get; set; }
     public double aumentoSueño { get; set; }
@@ -92,23 +94,27 @@ public class Player : MonoBehaviour
     }
     void CheckStats()
     {
+        //Si el jugador tiene hambre o carece de diversion muere
         if (hambre <= 0 || diversión <= 0)
         {
-            //FIN DE PARTIDA SIM MUERE
+            panelMuerte.SetActive(true);
+            panelVida.SetActive(false);
         }
-        else if (sueño <= 0)
+        else if (sueño <= 0)    //Si tiene sueño se pone a dormir en el suelo
         {
             estado = Estado.dormir;
-            Despertar();
+            accionControlada = true;
+            Invoke("Despertar", 10);
             //Animacion dormir en el suelo
         }
-        else if (baño <= 0)
+        else if (baño <= 0)     //Si tiene qu ir al bañor lo hará en el mismo lugar
         {
             baño = 100;
+            higiene -= 50;
             //Hacer que se mee
         }
-        else if (higiene <= 0)
-            restaConstante = 0.05;
+        else if (higiene <= 0)  //Si carece de higiene su resta será mayor
+            restaConstante = 0.1;
         else
             restaConstante = 0.01;
     }
@@ -198,7 +204,7 @@ public class Player : MonoBehaviour
         if (sueño > 0)
             sueño -= restaSueño * 4;
         if (hambre > 0)
-            hambre -= restaHambre;
+            hambre -= restaHambre * 4;
         if (higiene > 0)
             higiene -= restaHigiene * 2;
         //Animacion Ejericio
@@ -209,9 +215,9 @@ public class Player : MonoBehaviour
     {
         Debug.Log("Ejercicio");
         if (diversión > 0)
-            diversión -= restaDiversión;
+            diversión -= restaDiversión * 4;
         if (sueño > 0)
-            sueño -= restaSueño * 2;
+            sueño -= restaSueño * 3;
         //Animacion Ordenador
         animator.SetInteger("estado", 2);
 

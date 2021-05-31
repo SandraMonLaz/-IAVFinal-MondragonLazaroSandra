@@ -9,12 +9,14 @@ public class Ordenador : ObjetoIntMultiple
     [SerializeField] float tiempo = 10;
     [SerializeField] Material[] materials;
     [SerializeField] Renderer pc;
-    void Start()
+
+    public override void Interactuar()
     {
+        base.Interactuar();
         textoBoton.text = "Jugar";
         textoBoton2.text = "Trabajar";
-    }
 
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "Player" && activo)
