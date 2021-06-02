@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using BehaviorDesigner.Runtime;
 
 public class Player : MonoBehaviour
 {
@@ -18,11 +19,11 @@ public class Player : MonoBehaviour
     public bool accionControlada = false;
 
     //Atributos del sim
-    [SerializeField] double higiene     = 60;
-    [SerializeField] double hambre      = 60;
-    [SerializeField] double sueño       = 100;
-    [SerializeField] double diversión   = 80;
-    [SerializeField] double baño        = 80;
+    [SerializeField] public double higiene     = 60;
+    [SerializeField] public double hambre      = 60;
+    [SerializeField] public double sueño       = 100;
+    [SerializeField] public double diversión   = 80;
+    [SerializeField] public double baño        = 80;
 
     //Resta continua
     [SerializeField] double restaConstante = 0.01;
@@ -53,7 +54,6 @@ public class Player : MonoBehaviour
     void Start()
     {
         dinero = 100;
-
         tiempoTick = 0.1f;
         tiempoActual = Time.time;
         tiempoTotal = Time.time;
@@ -213,13 +213,13 @@ public class Player : MonoBehaviour
     }
     void Trabajar()
     {
-        Debug.Log("Ejercicio");
+        Debug.Log("Trabajar");
         if (diversión > 0)
             diversión -= restaDiversión * 4;
         if (sueño > 0)
             sueño -= restaSueño * 3;
         //Animacion Ordenador
-        animator.SetInteger("estado", 2);
+        animator.SetInteger("estado", 8);
 
     }
     void QuitarConstantes()

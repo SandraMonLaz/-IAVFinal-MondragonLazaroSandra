@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44921178, g: 0.4992832, b: 0.57571214, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -501,7 +501,7 @@ GameObject:
   - component: {fileID: 77846722}
   - component: {fileID: 77846724}
   - component: {fileID: 77846723}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Horno
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -734,7 +734,7 @@ GameObject:
   - component: {fileID: 101735331}
   - component: {fileID: 101735333}
   - component: {fileID: 101735332}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cama
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -1163,7 +1163,7 @@ GameObject:
   - component: {fileID: 234595941}
   - component: {fileID: 234595943}
   - component: {fileID: 234595942}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Posicion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1213,8 +1213,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 9.909198, y: 0.52840996, z: 10.113203}
-  m_Center: {x: 0.30013657, y: 0.22, z: -0.050568465}
+  m_Size: {x: 9.909198, y: 0.52840996, z: 4.3340983}
+  m_Center: {x: 0.30013657, y: 0.22, z: -0.10554584}
 --- !u!1 &264984387
 GameObject:
   m_ObjectHideFlags: 0
@@ -1604,7 +1604,7 @@ GameObject:
   - component: {fileID: 332431883}
   - component: {fileID: 332431884}
   - component: {fileID: 332431885}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sofa
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -2080,7 +2080,7 @@ GameObject:
   - component: {fileID: 466080494}
   - component: {fileID: 466080496}
   - component: {fileID: 466080495}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: LavaboCocina
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -2274,7 +2274,7 @@ GameObject:
   - component: {fileID: 553900062}
   - component: {fileID: 553900064}
   - component: {fileID: 553900063}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Vitro
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -2416,7 +2416,7 @@ GameObject:
   - component: {fileID: 559410978}
   - component: {fileID: 559410980}
   - component: {fileID: 559410979}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Ordenador
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -3968,7 +3968,7 @@ GameObject:
   - component: {fileID: 1023725443}
   - component: {fileID: 1023725445}
   - component: {fileID: 1023725444}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Nevera
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -5310,6 +5310,48 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &1363154306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363154301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Player
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(1276.96875,-5358.71729)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(-3.03125,121.282715)"},"ID":1,"Name":"Repeater","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":0},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(-5.603162,112.324188)"},"ID":2,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-491.479218,131.486816)"},"ID":3,"Name":"Sequence","Instant":true,"AbortTypeabortType":"LowerPriority","Children":[{"Type":"CondicionAccionControlada","NodeData":{"Offset":"(1.49527454,138.9253)"},"ID":4,"Name":"Condicion
+        Accion Controlada","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-293.3534,128.095215)"},"ID":5,"Name":"Sequence","Instant":true,"AbortTypeabortType":"LowerPriority","Children":[{"Type":"CondicionHambre","NodeData":{"Offset":"(-11.8377686,140.830078)"},"ID":6,"Name":"Condicion
+        Hambre","Instant":true}]}]}]}}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 1.6.8
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
 --- !u!111 &1363154307
 Animation:
   m_ObjectHideFlags: 0
@@ -5529,7 +5571,7 @@ GameObject:
   - component: {fileID: 1397550116}
   - component: {fileID: 1397550118}
   - component: {fileID: 1397550117}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ducha
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -5580,8 +5622,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.007814545, y: 0.019816024, z: 0.016119841}
-  m_Center: {x: 0.0024072633, y: -0.0014392799, z: -1.4512619e-17}
+  m_Size: {x: 0.007814545, y: 0.0153490435, z: 0.016119841}
+  m_Center: {x: 0.0024072633, y: 0.000794211, z: 3.0388564e-18}
 --- !u!1 &1435950085
 GameObject:
   m_ObjectHideFlags: 0
@@ -7329,7 +7371,7 @@ GameObject:
   - component: {fileID: 1970196592}
   - component: {fileID: 1970196594}
   - component: {fileID: 1970196593}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: "Ba\xF1o"
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -7392,7 +7434,7 @@ GameObject:
   - component: {fileID: 1972280048}
   - component: {fileID: 1972280050}
   - component: {fileID: 1972280049}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: "LavaboBa\xF1o"
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -7911,13 +7953,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068094579}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.8798514, y: -0.24925, z: -0.06972557, w: 0.39859033}
+  m_LocalPosition: {x: 0, y: 3, z: 5.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 41.808002, y: -154.457, z: -138.47}
 --- !u!1 &2069351856
 GameObject:
   m_ObjectHideFlags: 0
