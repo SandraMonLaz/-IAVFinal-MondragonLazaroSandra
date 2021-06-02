@@ -17,9 +17,9 @@ public class Ordenador : ObjetoIntMultiple
         textoBoton2.text = "Trabajar";
 
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.name == "Player" && activo)
+        if (other.gameObject.name == "Player" && activo && !algoUsandose)
         {
             if(accion == 1)
             {
@@ -31,6 +31,7 @@ public class Ordenador : ObjetoIntMultiple
             {
                 player.estado = Player.Estado.trabajar;
                 pc.material = materials[1];
+                Debug.Log("trabajar");
             }
 
             algoUsandose = true;

@@ -35,9 +35,9 @@ public class DispensadorComida : ObjetoInteractuable
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if(other.gameObject.name == "Player" && activo)
+        if(other.gameObject.name == "Player" && activo && !algoUsandose)
         {
             player.estado = Player.Estado.comer;
             player.aumentoHambre = aumentoHambre;

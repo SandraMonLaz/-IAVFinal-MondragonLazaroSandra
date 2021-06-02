@@ -38,6 +38,9 @@ public class CondicionDinero : Conditional
         if (vista.getHambre() != null && vista.getPrecioHambre() <= player.dinero)
             return TaskStatus.Failure;
 
-        return TaskStatus.Success;
+        else if (player.hambre < 50)
+            return TaskStatus.Success;
+
+        else return TaskStatus.Failure;
     }
 }

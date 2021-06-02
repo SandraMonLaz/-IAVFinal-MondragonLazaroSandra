@@ -14,17 +14,16 @@ public class Baño : ObjetoInteractuable
         boton.onClick.AddListener(delegate { VeAlDestino(); });
         boton.SendMessage("VeAlDestino", SendMessageOptions.DontRequireReceiver);
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.name == "Player" && activo)
+        if (other.gameObject.name == "Player" && activo && !algoUsandose)
         {
             player.estado = Player.Estado.baño;
             player.aumentoBaño = aumentoBaño;
-            Invoke("DejarInteractuar", tiempo);
             algoUsandose = true;
-
             //Posicionamiento y rotacion
             player.transform.rotation = Quaternion.Euler(0,32,0);
+            Invoke("DejarInteractuar", tiempo);
         }
     }
 }

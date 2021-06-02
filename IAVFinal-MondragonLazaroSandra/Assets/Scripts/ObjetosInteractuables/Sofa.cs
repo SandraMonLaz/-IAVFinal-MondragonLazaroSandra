@@ -16,9 +16,9 @@ public class Sofa : ObjetoInteractuable
         boton.onClick.AddListener(delegate { VeAlDestino(); });
         boton.SendMessage("VeAlDestino", SendMessageOptions.DontRequireReceiver);
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.name == "Player" && activo)
+        if (other.gameObject.name == "Player" && activo && !algoUsandose)
         {
             player.estado = Player.Estado.verTele;
             player.aumentoDiversion = aumentoDiversion;

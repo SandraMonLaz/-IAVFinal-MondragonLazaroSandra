@@ -16,7 +16,7 @@ public class CondicionSueño : Conditional
     }
     public override TaskStatus OnUpdate()
     {
-        if (player.sueño < 30 && vista.getSueño() != null)
+        if (player.sueño < 50 && vista.getSueño() != null)
             return TaskStatus.Success;
 
         return TaskStatus.Failure;

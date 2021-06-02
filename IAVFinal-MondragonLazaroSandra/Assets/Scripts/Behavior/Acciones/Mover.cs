@@ -24,7 +24,7 @@ namespace BehaviorDesigner.Runtime.Tasks
         public override TaskStatus OnUpdate()
         {
             float distancia = (navMesh.destination - player.transform.position).magnitude;
-            if (distancia > 2)
+            if (distancia > 1)
                 return TaskStatus.Failure;
             return TaskStatus.Success;
         }
