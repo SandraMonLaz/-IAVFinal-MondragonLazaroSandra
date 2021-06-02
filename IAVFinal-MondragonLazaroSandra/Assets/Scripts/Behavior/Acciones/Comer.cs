@@ -16,3 +16,17 @@ namespace BehaviorDesigner.Runtime.Tasks
         }
     }
 }
+
+namespace BehaviorDesigner.Runtime.Tasks
+{
+    public class Trabajar : Mover
+    {
+        public override void OnStart()
+        {
+            base.OnStart();
+            navMesh.destination = vista.getOrdenador().transform.position;
+            vista.getOrdenador().SetActivo(true);
+            vista.getOrdenador().accion = 2;
+        }
+    }
+}

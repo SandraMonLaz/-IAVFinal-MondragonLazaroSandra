@@ -18,6 +18,7 @@ public class ObjetoInteractuable : MonoBehaviour
 
     protected bool activo = false;
     protected static bool algoUsandose = false;
+    protected static bool algoEnCola = false;
 
     /// <summary>
     /// Método que se llama cuando se clicla al objeto.
@@ -28,6 +29,8 @@ public class ObjetoInteractuable : MonoBehaviour
         boton.gameObject.SetActive(true);
         //Debug.Log(gameObject.name);
         player.accionControlada = true;
+        if (algoUsandose)
+            algoEnCola = true;
     }
     public void VeAlDestino()
     {
@@ -40,10 +43,14 @@ public class ObjetoInteractuable : MonoBehaviour
 
     protected void DejarInteractuar()
     {
-        player.accionControlada = false;
-        player.estado = Player.Estado.idle;
+        if (!algoEnCola)
+        {
+            player.accionControlada = false;
+            player.estado = Player.Estado.idle;
+            algoUsandose = false;        
+        }
         activo = false;
-        algoUsandose = false;
+        algoEnCola = false;
     }
     public bool AlgoUsandose()
     {

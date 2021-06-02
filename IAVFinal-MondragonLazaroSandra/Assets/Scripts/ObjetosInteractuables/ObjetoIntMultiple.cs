@@ -10,7 +10,7 @@ public class ObjetoIntMultiple : ObjetoInteractuable
     [SerializeField]
     protected Text textoBoton2;          //Texto del segundo botón
 
-    protected int accion;
+    public int accion;
     public override void Interactuar()
     {
         base.Interactuar();
