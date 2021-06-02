@@ -7,7 +7,7 @@ public class CondicionAccionControlada : Conditional
 {
     Player player;
 
-    void start()
+    public override void OnAwake()
     {
         player = gameObject.GetComponent<Player>();
     }

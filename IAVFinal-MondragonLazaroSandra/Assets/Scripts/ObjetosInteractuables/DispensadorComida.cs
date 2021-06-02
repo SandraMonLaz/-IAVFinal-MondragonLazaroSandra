@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class DispensadorComida : ObjetoInteractuable
 {
+    [SerializeField] GameObject textoAdvertencia;
     public int gasto = 10;
     public double aumentoHambre = 0.2;
-    [SerializeField] GameObject textoAdvertencia;
 
     Transform puerta;
-
+    protected float tiempo = 4;
     protected string texto;
 
     void Start()
@@ -46,7 +46,7 @@ public class DispensadorComida : ObjetoInteractuable
 
 
             puerta.Rotate(new Vector3(0, 0, 270));
-            Invoke("DejarComer", 5f);
+            Invoke("DejarComer", tiempo);
         }
     }
 

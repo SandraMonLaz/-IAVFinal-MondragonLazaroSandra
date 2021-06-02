@@ -23,11 +23,10 @@ public class Sofa : ObjetoInteractuable
             player.estado = Player.Estado.verTele;
             player.aumentoDiversion = aumentoDiversion;
             tv.material = materials[1];
-            Invoke("DejarDeVer", tiempo);
             algoUsandose = true;
-
             //Posicionamiento y rotacion
             player.transform.LookAt(tv.transform, Vector3.up);
+            Invoke("DejarDeVer", tiempo);
         }
     }
 

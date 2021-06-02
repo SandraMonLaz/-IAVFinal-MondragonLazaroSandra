@@ -26,7 +26,7 @@ public class ObjetoInteractuable : MonoBehaviour
     {
         boton.transform.position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
         boton.gameObject.SetActive(true);
-        Debug.Log(gameObject.name);
+        //Debug.Log(gameObject.name);
         player.accionControlada = true;
     }
     public void VeAlDestino()
@@ -47,6 +47,11 @@ public class ObjetoInteractuable : MonoBehaviour
     }
     public bool AlgoUsandose()
     {
-        return algoUsandose;
+        return algoUsandose && player.accionControlada;
+    }
+
+    public void SetActivo(bool t)
+    {
+        activo = t;
     }
 }

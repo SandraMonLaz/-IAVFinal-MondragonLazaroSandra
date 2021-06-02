@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Diversion
+  - "Sue\xF1o"
+  - Hambre
+  - Higiene
+  - "Ba\xF1o"
+  - Ordenador
   layers:
   - Default
   - TransparentFX

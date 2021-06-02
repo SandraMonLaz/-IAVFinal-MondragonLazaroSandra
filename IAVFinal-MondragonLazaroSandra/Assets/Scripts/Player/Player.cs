@@ -14,9 +14,9 @@ public class Player : MonoBehaviour
     float tiempoActual;
     float tiempoTotal;
     //Dinero del sim
-    public int dinero {get; set;}
 
     public bool accionControlada = false;
+    [SerializeField] public int dinero;
 
     //Atributos del sim
     [SerializeField] public double higiene     = 60;
@@ -53,7 +53,6 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        dinero = 100;
         tiempoTick = 0.1f;
         tiempoActual = Time.time;
         tiempoTotal = Time.time;

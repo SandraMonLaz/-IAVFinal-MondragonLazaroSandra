@@ -19,7 +19,7 @@ public class Vitro : DispensadorComida
             player.dinero -= gasto;
             algoUsandose = true;
 
-            Invoke("DejarInteractuar", 2f);
+            Invoke("DejarInteractuar", tiempo);
         }
     }
 }

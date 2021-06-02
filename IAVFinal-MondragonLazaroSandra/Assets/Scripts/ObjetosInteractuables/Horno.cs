@@ -12,6 +12,7 @@ public class Horno : DispensadorComida
     }
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log(activo);
         if (other.gameObject.name == "Player" && activo)
         {
             player.estado = Player.Estado.comer;
@@ -20,7 +21,7 @@ public class Horno : DispensadorComida
             algoUsandose = true;
 
             plane.SetActive(true);
-            Invoke("DejarComer", 5f);
+            Invoke("DejarComer", tiempo);
         }
     }
 
