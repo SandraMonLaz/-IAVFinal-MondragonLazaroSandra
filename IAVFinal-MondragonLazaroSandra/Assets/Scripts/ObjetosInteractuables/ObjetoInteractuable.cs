@@ -14,6 +14,8 @@ public class ObjetoInteractuable : MonoBehaviour
     protected NavMeshAgent navMesh;         //NavMesh del agente que controla el jugador
     [SerializeField]
     protected Player player;                //Player
+    [SerializeField]
+    protected Button boton2;             //Segundo Botón para que el jugador interactua
 
 
     protected bool activo = false;
@@ -28,15 +30,16 @@ public class ObjetoInteractuable : MonoBehaviour
         boton.transform.position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
         boton.gameObject.SetActive(true);
         //Debug.Log(gameObject.name);
-        player.accionControlada = true;
         if (algoUsandose)
             algoEnCola = true;
     }
     public void VeAlDestino()
     {
+        player.accionControlada = true;
         navMesh.destination = transform.position;
         player.estado = Player.Estado.andar;
         boton.gameObject.SetActive(false);
+        boton2.gameObject.SetActive(false);
         activo = true;
         navMesh.destination = transform.position;
     }
@@ -51,6 +54,10 @@ public class ObjetoInteractuable : MonoBehaviour
         }
         activo = false;
         algoEnCola = false;
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        algoUsandose = false;
     }
     public bool AlgoUsandose()
     {

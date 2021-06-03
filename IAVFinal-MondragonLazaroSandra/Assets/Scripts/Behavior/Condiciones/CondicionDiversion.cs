@@ -15,7 +15,7 @@ public class CondicionDiversion : Conditional
     }
     public override TaskStatus OnUpdate()
     {
-        if (player.diversión < 50 && vista.getDiversion() != null)
+        if (player.diversión < 40 && vista.getDiversion() != null)
             return TaskStatus.Success;
 
         return TaskStatus.Failure;

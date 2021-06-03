@@ -99,27 +99,21 @@ public class Player : MonoBehaviour
             panelMuerte.SetActive(true);
             panelVida.SetActive(false);
         }
-        else if (sueño <= 0)    //Si tiene sueño se pone a dormir en el suelo
-        {
-            estado = Estado.dormir;
-            accionControlada = true;
-            Invoke("Despertar", 10);
-            //Animacion dormir en el suelo
-        }
         else if (baño <= 0)     //Si tiene qu ir al bañor lo hará en el mismo lugar
         {
             baño = 100;
             higiene -= 50;
             //Hacer que se mee
         }
-        else if (higiene <= 0)  //Si carece de higiene su resta será mayor
-            restaConstante = 0.1;
+        else if (higiene <= 0 || sueño <= 0)  //Si carece de higiene o tiene mucho sueño su resta será mayor
+            restaConstante = 0.2;
         else
             restaConstante = 0.01;
     }
     void Despertar()
     {
         estado = Estado.idle;
+        accionControlada = false;
     }
     void Idle()
     {

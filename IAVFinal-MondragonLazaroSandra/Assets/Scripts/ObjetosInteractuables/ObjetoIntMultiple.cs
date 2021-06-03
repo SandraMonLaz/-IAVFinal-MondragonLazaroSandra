@@ -6,8 +6,6 @@ using UnityEngine.UI;
 public class ObjetoIntMultiple : ObjetoInteractuable
 {
     [SerializeField]
-    protected Button boton2;             //Segundo Botón para que el jugador interactua
-    [SerializeField]
     protected Text textoBoton2;          //Texto del segundo botón
 
     public int accion;
