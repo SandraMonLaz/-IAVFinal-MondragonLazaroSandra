@@ -28,4 +28,8 @@ public class Dormir : ObjetoInteractuable
             Invoke("DejarInteractuar", tiempoSueño);
         }
     }
+    public override void ModificarObjetoIA()
+    {
+        vistaPlayer.setSueño(this);
+    }
 }

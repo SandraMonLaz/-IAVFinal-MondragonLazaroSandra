@@ -28,4 +28,8 @@ public class ObjetoHigiene : ObjetoInteractuable
             Invoke("DejarInteractuar", tiempo);
         }
     }
+    public override void ModificarObjetoIA()
+    {
+        vistaPlayer.setHigiene(this);
+    }
 }

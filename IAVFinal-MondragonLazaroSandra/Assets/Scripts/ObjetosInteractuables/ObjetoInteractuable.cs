@@ -15,12 +15,14 @@ public class ObjetoInteractuable : MonoBehaviour
     [SerializeField]
     protected Player player;                //Player
     [SerializeField]
-    protected Button boton2;             //Segundo Botón para que el jugador interactua
+    protected Vista vistaPlayer;            //Player
+    [SerializeField]
+    protected Button boton2;                //Segundo Botón para que el jugador interactua
 
 
-    protected bool activo = false;
-    protected static bool algoUsandose = false;
-    protected static bool algoEnCola = false;
+    protected bool activo = false;                  //Si el objeto se encuentra activo o no(se encuentra activo cuando va a ser usado)
+    protected static bool algoUsandose = false;     //Si existe algún interactuable en la escena siendo usado
+    protected static bool algoEnCola = false;       //Si existe una acción que esté en cola o haya sido interrumpida
 
     /// <summary>
     /// Método que se llama cuando se clicla al objeto.
@@ -29,21 +31,34 @@ public class ObjetoInteractuable : MonoBehaviour
     {
         boton.transform.position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
         boton.gameObject.SetActive(true);
-        //Debug.Log(gameObject.name);
         if (algoUsandose)
             algoEnCola = true;
     }
+    /// <summary>
+    /// Modifica el objeto interactuable para que la IA lo use
+    /// </summary>
+    public virtual void ModificarObjetoIA()
+    {
+        //Cada interactuable lo modifica.
+    }
+    /// <summary>
+    /// Manda al agente a una zona para que interactue
+    /// </summary>
     public void VeAlDestino()
     {
+        ModificarObjetoIA();
+        activo = true;
         player.accionControlada = true;
+
         navMesh.destination = transform.position;
         player.estado = Player.Estado.andar;
+
         boton.gameObject.SetActive(false);
         boton2.gameObject.SetActive(false);
-        activo = true;
-        navMesh.destination = transform.position;
     }
-
+    /// <summary>
+    /// El agente deja de interactuar con el objeto
+    /// </summary>
     protected void DejarInteractuar()
     {
         if (!algoEnCola)

@@ -46,4 +46,8 @@ public class Ordenador : ObjetoIntMultiple
         if (accion == 2) player.dinero += 20;
     }
 
+    public override void ModificarObjetoIA()
+    {
+        vistaPlayer.setOrdenador(this);
+    }
 }

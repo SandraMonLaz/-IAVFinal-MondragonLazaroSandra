@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-
+/// <summary>
+/// Accion de ir al baño
+/// </summary>
 namespace BehaviorDesigner.Runtime.Tasks
 {
     public class IrAlBaño : Mover

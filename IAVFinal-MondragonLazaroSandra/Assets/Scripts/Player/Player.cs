@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.AI;
 using BehaviorDesigner.Runtime;
 
 public class Player : MonoBehaviour
 {
-    public enum Estado { idle, andar, lavar, verTele, comer, jugarOrdenador, baño, dormir, ejercicio, trabajar };
+    public enum Estado { idle, andar, lavar, verTele, comer, jugarOrdenador, baño, dormir, ejercicio, trabajar, muerto};
     public Estado estado = Estado.idle;
     //Tiempo que tiene que pasar en cada tick
     public float tiempoTick {get; set;}
@@ -42,6 +43,7 @@ public class Player : MonoBehaviour
     [SerializeField] Text textoDinero;
     [SerializeField] GameObject panelMuerte;
     [SerializeField] GameObject panelVida;
+    [SerializeField] GameObject pis;
 
     public double aumentoHambre { get; set; }
     public double aumentoSueño { get; set; }
@@ -98,22 +100,19 @@ public class Player : MonoBehaviour
         {
             panelMuerte.SetActive(true);
             panelVida.SetActive(false);
+            estado = Estado.muerto;
+            accionControlada = true;
         }
         else if (baño <= 0)     //Si tiene qu ir al bañor lo hará en el mismo lugar
         {
             baño = 100;
-            higiene -= 50;
-            //Hacer que se mee
+            higiene -= 30;
+            Instantiate(pis, new Vector3(transform.position.x, 0.5f, transform.position.z), Quaternion.identity);
         }
         else if (higiene <= 0 || sueño <= 0)  //Si carece de higiene o tiene mucho sueño su resta será mayor
-            restaConstante = 0.2;
+            restaConstante = 0.1;
         else
             restaConstante = 0.01;
-    }
-    void Despertar()
-    {
-        estado = Estado.idle;
-        accionControlada = false;
     }
     void Idle()
     {

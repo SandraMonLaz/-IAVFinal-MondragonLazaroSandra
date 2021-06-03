@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-
+/// <summary>
+/// Accion de comer
+/// </summary>
 namespace BehaviorDesigner.Runtime.Tasks
 {
     public class Comer : Mover
@@ -16,7 +18,9 @@ namespace BehaviorDesigner.Runtime.Tasks
         }
     }
 }
-
+/// <summary>
+/// Accion que realiza cuando no tiene dinero 
+/// </summary>
 namespace BehaviorDesigner.Runtime.Tasks
 {
     public class Trabajar : Mover

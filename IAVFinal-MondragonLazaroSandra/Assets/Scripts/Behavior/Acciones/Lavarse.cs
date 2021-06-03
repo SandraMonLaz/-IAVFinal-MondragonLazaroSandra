@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-
+/// <summary>
+/// Accion para restaurar la higiene
+/// </summary>
 namespace BehaviorDesigner.Runtime.Tasks
 {
     public class Lavarse : Mover

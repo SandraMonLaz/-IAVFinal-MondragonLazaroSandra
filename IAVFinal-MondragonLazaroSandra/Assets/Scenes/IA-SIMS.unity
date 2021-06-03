@@ -441,16 +441,16 @@ RectTransform:
   - {fileID: 184719237}
   - {fileID: 977304402}
   - {fileID: 1566885063}
-  - {fileID: 278428102}
-  - {fileID: 781366705}
-  - {fileID: 2069351857}
-  - {fileID: 1110842469}
+  - {fileID: 1974786375}
+  - {fileID: 819159746}
+  - {fileID: 935186197}
+  - {fileID: 737701569}
   m_Father: {fileID: 1479204146}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.7702157, y: 0}
   m_AnchorMax: {x: 1, y: 0.314}
-  m_AnchoredPosition: {x: 0.009399414, y: 10.100006}
+  m_AnchoredPosition: {x: 0.009399414, y: 10.099976}
   m_SizeDelta: {x: 0.018951416, y: 4.9825287}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &74302626
@@ -538,6 +538,7 @@ MonoBehaviour:
   textoBoton: {fileID: 593267494}
   navMesh: {fileID: 1363154302}
   player: {fileID: 1363154303}
+  vistaPlayer: {fileID: 0}
   boton2: {fileID: 1824000602}
   textoAdvertencia: {fileID: 66966185}
   gasto: 15
@@ -772,6 +773,7 @@ MonoBehaviour:
   textoBoton: {fileID: 593267494}
   navMesh: {fileID: 1363154302}
   player: {fileID: 1363154303}
+  vistaPlayer: {fileID: 0}
   boton2: {fileID: 1824000602}
   "aumentoSue\xF1o": 0.3
   "tiempoSue\xF1o": 20
@@ -896,9 +898,9 @@ RectTransform:
   m_Father: {fileID: 74302625}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.20112765}
-  m_AnchorMax: {x: 0.96800005, y: 0.31}
-  m_AnchoredPosition: {x: -6.9000244, y: 6.56501}
+  m_AnchorMin: {x: 0.48426655, y: 0.21900001}
+  m_AnchorMax: {x: 0.9522666, y: 0.328}
+  m_AnchoredPosition: {x: 0.099975586, y: 0.5650177}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &184719238
@@ -925,7 +927,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 1}
     m_PressedColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 1}
     m_SelectedColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 1}
-    m_DisabledColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 0.5019608}
+    m_DisabledColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -939,7 +941,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 892165929}
   m_HandleRect: {fileID: 892165928}
   m_Direction: 0
@@ -1202,6 +1204,7 @@ MonoBehaviour:
   textoBoton: {fileID: 593267494}
   navMesh: {fileID: 1363154302}
   player: {fileID: 1363154303}
+  vistaPlayer: {fileID: 0}
   boton2: {fileID: 1824000602}
   aumentoDiversion: 0.2
   tiempoEjercicio: 10
@@ -1516,86 +1519,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 273858532}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &278428101
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 278428102}
-  - component: {fileID: 278428104}
-  - component: {fileID: 278428103}
-  m_Layer: 5
-  m_Name: HambreT
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &278428102
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 278428101}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 74302625}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -85.19995, y: 32.866013}
-  m_SizeDelta: {x: 91.44556, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &278428103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 278428101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 38fd63d585347184ab3ed7c1c60531c9, type: 3}
-    m_FontSize: 35
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 'Hambre
-
-'
---- !u!222 &278428104
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 278428101}
-  m_CullTransparentMesh: 0
 --- !u!1 &303427144
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,6 +1597,7 @@ MonoBehaviour:
   textoBoton: {fileID: 593267494}
   navMesh: {fileID: 1363154302}
   player: {fileID: 1363154303}
+  vistaPlayer: {fileID: 0}
   boton2: {fileID: 1824000602}
   materials:
   - {fileID: 3875665211719597482, guid: 2a8590ff5b4779041ba5dca666ed1f57, type: 3}
@@ -2151,6 +2075,7 @@ MonoBehaviour:
   textoBoton: {fileID: 593267494}
   navMesh: {fileID: 1363154302}
   player: {fileID: 1363154303}
+  vistaPlayer: {fileID: 0}
   boton2: {fileID: 1824000602}
   aumentoHigiene: 0.3
   tiempo: 6
@@ -2346,6 +2271,7 @@ MonoBehaviour:
   textoBoton: {fileID: 593267494}
   navMesh: {fileID: 1363154302}
   player: {fileID: 1363154303}
+  vistaPlayer: {fileID: 0}
   boton2: {fileID: 1824000602}
   textoAdvertencia: {fileID: 66966185}
   gasto: 30
@@ -2395,10 +2321,10 @@ RectTransform:
   m_Father: {fileID: 862364167}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 46.966858}
+  m_AnchorMin: {x: 0.34996027, y: 0.5}
+  m_AnchorMax: {x: 0.9891447, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0.000012398}
+  m_SizeDelta: {x: 0, y: 83.6064}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &558578632
 MonoBehaviour:
@@ -2421,12 +2347,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 38fd63d585347184ab3ed7c1c60531c9, type: 3}
-    m_FontSize: 54
+    m_FontSize: 62
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 65
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -2484,8 +2410,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.9524897}
-  m_Center: {x: 0, y: 0, z: -0.023755163}
+  m_Size: {x: 0.6036983, y: 1, z: 0.82348806}
+  m_Center: {x: 0.034115065, y: 0, z: -0.08825597}
 --- !u!114 &559410980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2502,6 +2428,7 @@ MonoBehaviour:
   textoBoton: {fileID: 593267494}
   navMesh: {fileID: 1363154302}
   player: {fileID: 1363154303}
+  vistaPlayer: {fileID: 0}
   boton2: {fileID: 1824000602}
   textoBoton2: {fileID: 1790340985}
   accion: 0
@@ -2984,6 +2911,84 @@ Transform:
   m_Father: {fileID: 1297215895}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 90}
+--- !u!1 &737701568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 737701569}
+  - component: {fileID: 737701571}
+  - component: {fileID: 737701570}
+  m_Layer: 5
+  m_Name: HigieneT
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &737701569
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737701568}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 74302625}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.050250053, y: 0.012505279}
+  m_AnchorMax: {x: 0.43295604, y: 0.16712861}
+  m_AnchoredPosition: {x: 0.000045776367, y: 0}
+  m_SizeDelta: {x: 1.4455566, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &737701570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737701568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 38fd63d585347184ab3ed7c1c60531c9, type: 3}
+    m_FontSize: 57
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 62
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Higiene
+--- !u!222 &737701571
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737701568}
+  m_CullTransparentMesh: 0
 --- !u!1 &758100464
 GameObject:
   m_ObjectHideFlags: 0
@@ -3018,7 +3023,7 @@ Transform:
   m_Father: {fileID: 560727939}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &781366704
+--- !u!1 &819159745
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3026,9 +3031,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 781366705}
-  - component: {fileID: 781366707}
-  - component: {fileID: 781366706}
+  - component: {fileID: 819159746}
+  - component: {fileID: 819159748}
+  - component: {fileID: 819159747}
   m_Layer: 5
   m_Name: DiversionT
   m_TagString: Untagged
@@ -3036,32 +3041,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &781366705
+--- !u!224 &819159746
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 781366704}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 819159745}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 74302625}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -85.19995, y: -3.4199886}
-  m_SizeDelta: {x: 91.44556, y: 30}
+  m_AnchorMin: {x: 0.048899658, y: 0.38563877}
+  m_AnchorMax: {x: 0.43160564, y: 0.5402621}
+  m_AnchoredPosition: {x: 0.000045776367, y: -0.000015258789}
+  m_SizeDelta: {x: 1.4455566, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &781366706
+--- !u!114 &819159747
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 781366704}
+  m_GameObject: {fileID: 819159745}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
@@ -3076,27 +3081,25 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 38fd63d585347184ab3ed7c1c60531c9, type: 3}
-    m_FontSize: 35
+    m_FontSize: 57
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
+    m_MaxSize: 62
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Diversion
-
-'
---- !u!222 &781366707
+  m_Text: "Diversi\xF3n\n"
+--- !u!222 &819159748
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 781366704}
+  m_GameObject: {fileID: 819159745}
   m_CullTransparentMesh: 0
 --- !u!1 &836060750
 GameObject:
@@ -3387,7 +3390,7 @@ RectTransform:
   m_Father: {fileID: 1479204146}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.8477844, y: 0.90024877}
+  m_AnchorMin: {x: 0.9213182, y: 0.9075604}
   m_AnchorMax: {x: 0.9895687, y: 0.98775136}
   m_AnchoredPosition: {x: 0.00012207031, y: 1.5}
   m_SizeDelta: {x: -0.000061035156, y: -3.0000076}
@@ -3682,6 +3685,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892165927}
   m_CullTransparentMesh: 0
+--- !u!1 &935186196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 935186197}
+  - component: {fileID: 935186199}
+  - component: {fileID: 935186198}
+  m_Layer: 5
+  m_Name: "Ba\xF1oT"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &935186197
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935186196}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 74302625}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.05118716, y: 0.19345117}
+  m_AnchorMax: {x: 0.43389314, y: 0.3480745}
+  m_AnchoredPosition: {x: 0.000045776367, y: -0.000015258789}
+  m_SizeDelta: {x: 1.4455566, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &935186198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935186196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 38fd63d585347184ab3ed7c1c60531c9, type: 3}
+    m_FontSize: 57
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 62
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Ba\xF1o"
+--- !u!222 &935186199
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935186196}
+  m_CullTransparentMesh: 0
 --- !u!1 &977304401
 GameObject:
   m_ObjectHideFlags: 0
@@ -3716,9 +3797,9 @@ RectTransform:
   m_Father: {fileID: 74302625}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.016573338}
-  m_AnchorMax: {x: 0.96800005, y: 0.12514669}
-  m_AnchoredPosition: {x: -6.9000244, y: 6.830017}
+  m_AnchorMin: {x: 0.48426655, y: 0.037}
+  m_AnchorMax: {x: 0.9522666, y: 0.14553058}
+  m_AnchoredPosition: {x: 0.099975586, y: -0.16998291}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &977304403
@@ -3745,7 +3826,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 1}
     m_PressedColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 1}
     m_SelectedColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 1}
-    m_DisabledColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 0.5019608}
+    m_DisabledColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -3759,7 +3840,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1197880036}
   m_HandleRect: {fileID: 1197880035}
   m_Direction: 0
@@ -4042,6 +4123,7 @@ MonoBehaviour:
   textoBoton: {fileID: 593267494}
   navMesh: {fileID: 1363154302}
   player: {fileID: 1363154303}
+  vistaPlayer: {fileID: 0}
   boton2: {fileID: 1824000602}
   textoAdvertencia: {fileID: 66966185}
   gasto: 10
@@ -4432,86 +4514,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102363213}
-  m_CullTransparentMesh: 0
---- !u!1 &1110842468
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1110842469}
-  - component: {fileID: 1110842471}
-  - component: {fileID: 1110842470}
-  m_Layer: 5
-  m_Name: Higiene
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1110842469
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110842468}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 74302625}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -85.19995, y: -72.21399}
-  m_SizeDelta: {x: 91.44556, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1110842470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110842468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 38fd63d585347184ab3ed7c1c60531c9, type: 3}
-    m_FontSize: 35
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 'Higiene
-
-'
---- !u!222 &1110842471
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110842468}
   m_CullTransparentMesh: 0
 --- !u!1 &1124529808
 GameObject:
@@ -5299,7 +5301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   estado: 0
   accionControlada: 0
-  dinero: 0
+  dinero: 10
   higiene: 60
   hambre: 60
   "sue\xF1o": 40
@@ -5319,6 +5321,7 @@ MonoBehaviour:
   textoDinero: {fileID: 558578632}
   panelMuerte: {fileID: 1067636017}
   panelVida: {fileID: 1479204145}
+  pis: {fileID: 1834284479025740632, guid: 8364efc786c31e94bb6b862b7a6e0f6c, type: 3}
 --- !u!136 &1363154304
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5377,41 +5380,45 @@ MonoBehaviour:
       parentIndex: 
       startIndex: 
       variableStartIndex: 
-      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(1276.96875,-5358.71729)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(-3.03125,121.282715)"},"ID":1,"Name":"Repeater","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":0},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(9.88129,134.356232)"},"ID":2,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-1458.56189,176.745178)"},"ID":3,"Name":"Sequence","Instant":true,"AbortTypeabortType":"LowerPriority","Children":[{"Type":"CondicionAccionControlada","NodeData":{"Offset":"(-146.123856,138.9253)","Comment":"Si
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(1276.96875,-5358.71729)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(-3.03125,121.282715)"},"ID":1,"Name":"Repeater","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":0},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(9.88129,134.356232)"},"ID":2,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-1848.83069,122.397339)"},"ID":3,"Name":"Sequence","Instant":true,"AbortTypeabortType":"LowerPriority","Children":[{"Type":"CondicionAccionControlada","NodeData":{"Offset":"(-146.123856,138.9253)","Comment":"Si
         el jugador realiza una acci\u00f3n paramos el resto de acciones del arbol\n"},"ID":4,"Name":"Condicion
         Accion Controlada","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(60.952198,142.380875)","Comment":"Esperamos
-        2 \nsegundos de inervalo\n"},"ID":5,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":2},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-1156.87439,180.154968)"},"ID":6,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"CondicionDiversion","NodeData":{"Offset":"(-64.08994,156.981735)","Comment":"Si
-        la diversi\u00f3n  del sim \nesta por debajo del 50%"},"ID":7,"Name":"Condicion
-        Diversion","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(33.0406952,303.223267)"},"ID":8,"Name":"Until
-        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Divertirse","NodeData":{"Offset":"(-1.90476036,120)"},"ID":9,"Name":"Divertirse","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(122.022964,178.461517)","Comment":"Esperamos
-        a que \ntermine la accion"},"ID":10,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":10},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(205.897644,342.3092)","Comment":"Esperamos
-        2 \nsegundos de inervalo\n"},"ID":11,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":2},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-732.9067,193.253)"},"ID":12,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"CondicionDinero","NodeData":{"Offset":"(-117.277069,194.413757)"},"ID":13,"Name":"Condicion
-        Dinero","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(16.056,193.300964)"},"ID":14,"Name":"Until
-        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Trabajar","NodeData":{"Offset":"(-5.223877,109.225586)"},"ID":15,"Name":"Trabajar","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(168.278534,203.304657)","Comment":"Esperamos
-        a que \ntermine la accion"},"ID":16,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":10},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(328.4616,198.976013)","Comment":"Esperamos
-        2 \nsegundos de inervalo\n"},"ID":17,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":2},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-256.762756,197.226135)"},"ID":18,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"CondicionHambre","NodeData":{"Offset":"(-236.8702,401.941162)","Comment":"Si
-        el hambre del sim esta por debajo del 50%"},"ID":19,"Name":"Condicion Hambre","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(-41.5128632,407.6223)"},"ID":20,"Name":"Until
-        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Comer","NodeData":{"Offset":"(0,128.7302)"},"ID":21,"Name":"Comer","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(109.824265,411.991882)","Comment":"Esperamos
-        a que \ntermine la accion"},"ID":22,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":4},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(214.688889,546.151855)","Comment":"Esperamos
-        2 \nsegundos de inervalo\n"},"ID":23,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":2},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(8.896301,203.400421)"},"ID":24,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"CondicionSue\u00f1o","NodeData":{"Offset":"(-117.808594,135.75293)"},"ID":25,"Name":"Condicion
-        Sue \u00f1o","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(26.53273,251.611237)"},"ID":26,"Name":"Until
-        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.AccionDormi","NodeData":{"Offset":"(-0.9966488,140.199341)"},"ID":27,"Name":"Accion
+        2 \nsegundos de inervalo\n"},"ID":5,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":2},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-1493.36633,177.179688)"},"ID":6,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"CondicionPocoEstado","NodeData":{"Offset":"(-151.143738,199.6098)"},"ID":7,"Name":"Condicion
+        Poco Estado","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(0.4347515,168.6958)"},"ID":8,"Name":"Until
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.AccionMover","NodeData":{"Offset":"(1.24755669,170.9154)"},"ID":9,"Name":"Accion
+        Mover","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(123.043427,179.13)","Comment":"Esperamos
+        a que \ntermine la accion"},"ID":10,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":10},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-1156.87439,180.154968)"},"ID":11,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"CondicionDiversion","NodeData":{"Offset":"(-64.08994,156.981735)","Comment":"Si
+        la diversi\u00f3n  del sim \nesta por debajo del 50%"},"ID":12,"Name":"Condicion
+        Diversion","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(33.0406952,303.223267)"},"ID":13,"Name":"Until
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Divertirse","NodeData":{"Offset":"(-1.90476036,120)"},"ID":14,"Name":"Divertirse","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(122.022964,178.461517)","Comment":"Esperamos
+        a que \ntermine la accion"},"ID":15,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":10},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(205.897644,342.3092)","Comment":"Esperamos
+        2 \nsegundos de inervalo\n"},"ID":16,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":2},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-732.9067,193.253)"},"ID":17,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"CondicionDinero","NodeData":{"Offset":"(-117.277069,194.413757)"},"ID":18,"Name":"Condicion
+        Dinero","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(16.056,193.300964)"},"ID":19,"Name":"Until
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Trabajar","NodeData":{"Offset":"(-5.223877,109.225586)"},"ID":20,"Name":"Trabajar","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(168.278534,203.304657)","Comment":"Esperamos
+        a que \ntermine la accion"},"ID":21,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":10},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(328.4616,198.976013)","Comment":"Esperamos
+        2 \nsegundos de inervalo\n"},"ID":22,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":2},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-256.762756,197.226135)"},"ID":23,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"CondicionHambre","NodeData":{"Offset":"(-236.8702,401.941162)","Comment":"Si
+        el hambre del sim esta por debajo del 50%"},"ID":24,"Name":"Condicion Hambre","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(-41.5128632,407.6223)"},"ID":25,"Name":"Until
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Comer","NodeData":{"Offset":"(0,128.7302)"},"ID":26,"Name":"Comer","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(109.824265,411.991882)","Comment":"Esperamos
+        a que \ntermine la accion"},"ID":27,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":4},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(214.688889,546.151855)","Comment":"Esperamos
+        2 \nsegundos de inervalo\n"},"ID":28,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":2},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(8.896301,203.400421)"},"ID":29,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"CondicionSue\u00f1o","NodeData":{"Offset":"(-117.808594,135.75293)"},"ID":30,"Name":"Condicion
+        Sue \u00f1o","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(26.53273,251.611237)"},"ID":31,"Name":"Until
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.AccionDormi","NodeData":{"Offset":"(-0.9966488,140.199341)"},"ID":32,"Name":"Accion
         Dormi","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(109.766876,140)","Comment":"Esperamos
-        a que \ntermine la accion"},"ID":28,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":20},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(250.000412,131.430176)","Comment":"Esperamos
-        2 \nsegundos de \ninervalo\n"},"ID":29,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":2},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(335.264923,202.469849)"},"ID":30,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"CondicionBa\u00f1o","NodeData":{"Offset":"(-91.54835,401.033051)"},"ID":31,"Name":"Condicion
-        Ba \u00f1o","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(42.5634575,408.509064)"},"ID":32,"Name":"Until
-        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.IrAlBa\u00f1o","NodeData":{"Offset":"(-1.90476608,120)"},"ID":33,"Name":"Ir
+        a que \ntermine la accion"},"ID":33,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":20},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(250.000412,131.430176)","Comment":"Esperamos
+        2 \nsegundos de \ninervalo\n"},"ID":34,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":2},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(335.264923,202.469849)"},"ID":35,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"CondicionBa\u00f1o","NodeData":{"Offset":"(-91.54835,401.033051)"},"ID":36,"Name":"Condicion
+        Ba \u00f1o","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(42.5634575,408.509064)"},"ID":37,"Name":"Until
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.IrAlBa\u00f1o","NodeData":{"Offset":"(-1.90476608,120)"},"ID":38,"Name":"Ir
         Al Ba \u00f1o","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(180.055725,395.332153)","Comment":"Esperamos
-        a que \ntermine la accion"},"ID":34,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":6},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(258.571777,539.9992)","Comment":"Esperamos
-        2 \nsegundos de \ninervalo\n"},"ID":35,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":2},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(672.269348,212.1719)"},"ID":36,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"CondicionHigiene","NodeData":{"Offset":"(-136.532623,139.004318)"},"ID":37,"Name":"Condicion
-        Higiene","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(31.4305725,263.376434)"},"ID":38,"Name":"Until
-        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Lavarse","NodeData":{"Offset":"(3.88889313,110)"},"ID":39,"Name":"Lavarse","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(124.389008,136.189941)","Comment":"Esperamos
-        a que \ntermine la accion"},"ID":40,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":6},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(185.7146,281.427246)","Comment":"Esperamos
-        2 \nsegundos de \ninervalo\n"},"ID":41,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":2},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(978.5803,169.4118)"},"ID":42,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"CondicionDiversionNormal","NodeData":{"Offset":"(1.57718086,140.032242)"},"ID":43,"Name":"Condicion
-        Diversion Normal","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(174.069092,139.61377)"},"ID":44,"Name":"Until
-        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Divertirse","NodeData":{"Offset":"(0,130)"},"ID":45,"Name":"Divertirse","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(332.9074,133.684753)","Comment":"Esperamos
-        a que \ntermine la accion"},"ID":46,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":10},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(485.7141,209.999435)","Comment":"Esperamos
-        2 \nsegundos de \ninervalo\n"},"ID":47,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":2},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Idle","NodeData":{"Offset":"(1523.86121,120.52523)"},"ID":48,"Name":"Idle","Instant":true}]}]}}'
+        a que \ntermine la accion"},"ID":39,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":6},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(258.571777,539.9992)","Comment":"Esperamos
+        2 \nsegundos de \ninervalo\n"},"ID":40,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":2},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(672.269348,212.1719)"},"ID":41,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"CondicionHigiene","NodeData":{"Offset":"(-136.532623,139.004318)"},"ID":42,"Name":"Condicion
+        Higiene","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(31.4305725,263.376434)"},"ID":43,"Name":"Until
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Lavarse","NodeData":{"Offset":"(3.88889313,110)"},"ID":44,"Name":"Lavarse","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(124.389008,136.189941)","Comment":"Esperamos
+        a que \ntermine la accion"},"ID":45,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":6},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(185.7146,281.427246)","Comment":"Esperamos
+        2 \nsegundos de \ninervalo\n"},"ID":46,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":2},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(978.5803,169.4118)"},"ID":47,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"CondicionDiversionNormal","NodeData":{"Offset":"(1.57718086,140.032242)"},"ID":48,"Name":"Condicion
+        Diversion Normal","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(174.069092,139.61377)"},"ID":49,"Name":"Until
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Divertirse","NodeData":{"Offset":"(0,130)"},"ID":50,"Name":"Divertirse","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(332.9074,133.684753)","Comment":"Esperamos
+        a que \ntermine la accion"},"ID":51,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":10},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(485.7141,209.999435)","Comment":"Esperamos
+        2 \nsegundos de \ninervalo\n"},"ID":52,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":2},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Idle","NodeData":{"Offset":"(1523.86121,120.52523)"},"ID":53,"Name":"Idle","Instant":true}]}]}}'
       fieldSerializationData:
         typeName: []
         fieldNameHash: 
@@ -5691,6 +5698,7 @@ MonoBehaviour:
   textoBoton: {fileID: 593267494}
   navMesh: {fileID: 1363154302}
   player: {fileID: 1363154303}
+  vistaPlayer: {fileID: 0}
   boton2: {fileID: 1824000602}
   aumentoHigiene: 0.6
   tiempo: 6
@@ -5821,10 +5829,10 @@ RectTransform:
   m_Father: {fileID: 74302625}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.3914362}
-  m_AnchorMax: {x: 0.96800005, y: 0.5}
-  m_AnchoredPosition: {x: -6.9000244, y: 6.56501}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.48426655, y: 0.409}
+  m_AnchorMax: {x: 0.9522666, y: 0.52034265}
+  m_AnchoredPosition: {x: 0.099975586, y: 0.06501007}
+  m_SizeDelta: {x: 0, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1443677613
 MonoBehaviour:
@@ -5850,7 +5858,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 1}
     m_PressedColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 1}
     m_SelectedColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 1}
-    m_DisabledColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 0.5019608}
+    m_DisabledColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -5864,7 +5872,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1521972211}
   m_HandleRect: {fileID: 1521972210}
   m_Direction: 0
@@ -6170,9 +6178,9 @@ RectTransform:
   m_Father: {fileID: 74302625}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5866915}
-  m_AnchorMax: {x: 0.96800005, y: 0.69600004}
-  m_AnchoredPosition: {x: -6.9000244, y: 6.865013}
+  m_AnchorMin: {x: 0.48426655, y: 0.60700005}
+  m_AnchorMax: {x: 0.9522666, y: 0.717}
+  m_AnchoredPosition: {x: 0.099975586, y: -0.13498688}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1527926978
@@ -6199,7 +6207,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 1}
     m_PressedColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 1}
     m_SelectedColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 1}
-    m_DisabledColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 0.5019608}
+    m_DisabledColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -6213,7 +6221,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1102363215}
   m_HandleRect: {fileID: 1102363214}
   m_Direction: 0
@@ -6259,7 +6267,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527926976}
-  m_CullTransparentMesh: 0
+  m_CullTransparentMesh: 1
 --- !u!1 &1566885062
 GameObject:
   m_ObjectHideFlags: 0
@@ -6285,17 +6293,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566885062}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 74302625}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -85.20003, y: 71.140015}
-  m_SizeDelta: {x: 91.44556, y: 30}
+  m_AnchorMin: {x: 0.04378949, y: 0.79714984}
+  m_AnchorMax: {x: 0.42649546, y: 0.95177317}
+  m_AnchoredPosition: {x: 0.000045776367, y: -0.000015258789}
+  m_SizeDelta: {x: 1.4455566, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1566885064
 MonoBehaviour:
@@ -6318,12 +6326,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 38fd63d585347184ab3ed7c1c60531c9, type: 3}
-    m_FontSize: 35
+    m_FontSize: 57
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
+    m_MaxSize: 62
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -7015,9 +7023,9 @@ RectTransform:
   m_Father: {fileID: 74302625}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.79312766}
-  m_AnchorMax: {x: 0.96800005, y: 0.897}
-  m_AnchoredPosition: {x: -6.9000244, y: 7.6650085}
+  m_AnchorMin: {x: 0.48426655, y: 0.81700003}
+  m_AnchorMax: {x: 0.9522666, y: 0.9203428}
+  m_AnchoredPosition: {x: 0.099975586, y: -0.33499146}
   m_SizeDelta: {x: 0, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1879391984
@@ -7044,7 +7052,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 1}
     m_PressedColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 1}
     m_SelectedColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 1}
-    m_DisabledColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 0.5019608}
+    m_DisabledColor: {r: 0.41176474, g: 0.8980393, b: 0.45098042, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -7058,7 +7066,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 92898697}
   m_HandleRect: {fileID: 92898696}
   m_Direction: 0
@@ -7498,6 +7506,7 @@ MonoBehaviour:
   textoBoton: {fileID: 593267494}
   navMesh: {fileID: 1363154302}
   player: {fileID: 1363154303}
+  vistaPlayer: {fileID: 0}
   boton2: {fileID: 1824000602}
   "aumentoBa\xF1o": 0.5
   tiempo: 6
@@ -7562,6 +7571,7 @@ MonoBehaviour:
   textoBoton: {fileID: 593267494}
   navMesh: {fileID: 1363154302}
   player: {fileID: 1363154303}
+  vistaPlayer: {fileID: 0}
   boton2: {fileID: 1824000602}
   aumentoHigiene: 0.2
   tiempo: 6
@@ -7579,6 +7589,86 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.49, y: 8.58, z: 7.8863387}
   m_Center: {x: -0.12, y: 0.73, z: 0.00000023841866}
+--- !u!1 &1974786374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1974786375}
+  - component: {fileID: 1974786377}
+  - component: {fileID: 1974786376}
+  m_Layer: 5
+  m_Name: HambreT
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1974786375
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974786374}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 74302625}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.04512302, y: 0.58737016}
+  m_AnchorMax: {x: 0.427829, y: 0.7419935}
+  m_AnchoredPosition: {x: 0.000045776367, y: -0.000015258789}
+  m_SizeDelta: {x: 1.4455566, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1974786376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974786374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 38fd63d585347184ab3ed7c1c60531c9, type: 3}
+    m_FontSize: 57
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 62
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Hambre
+
+'
+--- !u!222 &1974786377
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974786374}
+  m_CullTransparentMesh: 0
 --- !u!1 &1978084479
 GameObject:
   m_ObjectHideFlags: 0
@@ -8052,84 +8142,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 41.808002, y: -154.457, z: -138.47}
---- !u!1 &2069351856
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2069351857}
-  - component: {fileID: 2069351859}
-  - component: {fileID: 2069351858}
-  m_Layer: 5
-  m_Name: "Ba\xF1oT"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2069351857
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2069351856}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 74302625}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -85.2, y: -38.4}
-  m_SizeDelta: {x: 91.44556, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2069351858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2069351856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 38fd63d585347184ab3ed7c1c60531c9, type: 3}
-    m_FontSize: 35
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "Ba\xF1o\n"
---- !u!222 &2069351859
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2069351856}
-  m_CullTransparentMesh: 0
 --- !u!1 &2123039421
 GameObject:
   m_ObjectHideFlags: 0
@@ -13080,7 +13092,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c7b39cec9e170014abf1e95f781da24c, type: 2}
+  - {fileID: 2100000, guid: fb2e810b3cb6b4c48bddea8bc04876fe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

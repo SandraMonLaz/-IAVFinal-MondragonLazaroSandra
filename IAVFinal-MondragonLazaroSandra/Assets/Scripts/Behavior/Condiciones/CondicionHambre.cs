@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using BehaviorDesigner.Runtime.Tasks;
 
+/// <summary>
+/// Si el agente tiene hambre
+/// </summary>
 public class CondicionHambre : Conditional
 {
     Player player;
@@ -22,6 +25,9 @@ public class CondicionHambre : Conditional
         return TaskStatus.Failure;
     }
 }
+/// <summary>
+/// Si el agente tiene suficiente dinero para comprar comida
+/// </summary>
 public class CondicionDinero : Conditional
 {
     Player player;

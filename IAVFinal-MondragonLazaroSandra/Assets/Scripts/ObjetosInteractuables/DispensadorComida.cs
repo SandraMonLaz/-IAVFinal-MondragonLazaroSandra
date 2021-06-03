@@ -60,4 +60,8 @@ public class DispensadorComida : ObjetoInteractuable
     {
         textoAdvertencia.gameObject.SetActive(false);
     }
+    public override void ModificarObjetoIA()
+    {
+        vistaPlayer.setHambre(this);
+    }
 }

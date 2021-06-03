@@ -35,4 +35,8 @@ public class Sofa : ObjetoInteractuable
         base.DejarInteractuar();
         tv.material = materials[0];
     }
+    public override void ModificarObjetoIA()
+    {
+        vistaPlayer.setDiversion(this);
+    }
 }

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using BehaviorDesigner.Runtime.Tasks;
 
+/// <summary>
+/// Si el agente tiene sueño
+/// </summary>
 public class CondicionSueño : Conditional
 {
     Player player;

@@ -22,4 +22,8 @@ public class Vitro : DispensadorComida
             Invoke("DejarInteractuar", tiempo);
         }
     }
+    public override void ModificarObjetoIA()
+    {
+        vistaPlayer.setHambre(this);
+    }
 }

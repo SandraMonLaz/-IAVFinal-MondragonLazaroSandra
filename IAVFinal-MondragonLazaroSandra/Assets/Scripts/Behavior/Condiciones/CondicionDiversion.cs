@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using BehaviorDesigner.Runtime.Tasks;
 
+/// <summary>
+/// Si la stat de diversion esta por debajo de 40
+/// </summary>
 public class CondicionDiversion : Conditional
 {
     Player player;
@@ -21,6 +24,9 @@ public class CondicionDiversion : Conditional
         return TaskStatus.Failure;
     }
 }
+/// <summary>
+/// Si existe algún objeto de diversion
+/// </summary>
 public class CondicionDiversionNormal : Conditional
 {
     Vista vista;

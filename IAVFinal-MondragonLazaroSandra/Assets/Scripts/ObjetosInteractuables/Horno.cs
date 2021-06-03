@@ -30,5 +30,8 @@ public class Horno : DispensadorComida
         base.DejarInteractuar();
         plane.SetActive(false);
     }
-
+    public override void ModificarObjetoIA()
+    {
+        vistaPlayer.setHambre(this);
+    }
 }

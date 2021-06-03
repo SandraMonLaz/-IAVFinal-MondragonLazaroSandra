@@ -25,4 +25,8 @@ public class TablaEjercicio : ObjetoInteractuable
             Invoke("DejarInteractuar", tiempoEjercicio);
         }
     }
+    public override void ModificarObjetoIA()
+    {
+        vistaPlayer.setDiversion(this);
+    }
 }

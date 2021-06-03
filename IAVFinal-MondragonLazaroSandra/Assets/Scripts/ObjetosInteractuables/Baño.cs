@@ -26,4 +26,8 @@ public class Baño : ObjetoInteractuable
             Invoke("DejarInteractuar", tiempo);
         }
     }
+    public override void ModificarObjetoIA()
+    {
+        vistaPlayer.setBaño(this);
+    }
 }

@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using BehaviorDesigner.Runtime.Tasks;
 
-
+/// <summary>
+/// Si la stat del baño esta por debajo de 50
+/// </summary>
 public class CondicionBaño : Conditional
 {
     Player player;
