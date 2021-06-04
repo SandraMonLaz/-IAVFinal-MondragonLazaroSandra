@@ -33,9 +33,9 @@ El árbol de comportamiento funciona de la siguiente manera. Primero se prioriza
 estadística del agente se encuentra por debajo del 30%. Si es el caso realizará la acción correspondiente. En caso de que no haya ninguna por debajo del 30% irá siguiendo 
 el siguiente orden si alguna está por debajo del 50%: Diversión, Hambre, Sueño, Baño e Higiene.  En el caso de que sus estadísticas estén por encima del 50% el agente irá 
 a divertirse.  
- ![Árbol de Comportamiento](Assets/Markdown/Arbol.png)
-### _EL ESCENARIO_
- ![Zona Dormitorio](Assets/Markdown/Captura2.png)  
- ![Zona Cocina](Assets/Markdown/Captura1.png)  
+ ![Árbol de Comportamiento](IAVFinal-MondragonLazaroSandra/Assets/Markdown/Arbol.PNG)  
+### _EL ESCENARIO_  
+ ![Zona Dormitorio](IAVFinal-MondragonLazaroSandra/Assets/Markdown/Captura2.PNG)  
+ ![Zona Cocina](IAVFinal-MondragonLazaroSandra/Assets/Markdown/Captura1.PNG)  
 ### _PRUEBAS_
 * [Vídeo 5 minutos( a cámara rápida) agente vive de forma independiente](https://drive.google.com/file/d/1DQqnhtARg2hdkqHDbG13G805c_Mof6NX/view?usp=sharing)
