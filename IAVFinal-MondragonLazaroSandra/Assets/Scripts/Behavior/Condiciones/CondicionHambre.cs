@@ -19,7 +19,7 @@ public class CondicionHambre : Conditional
     }
     public override TaskStatus OnUpdate()
     {
-        if (player.hambre < 50 && vista.getHambre() != null)
+        if (player.hambre < 50 && vista.getHambre() != null && vista.getPrecioHambre() >= player.dinero)
             return TaskStatus.Success;
 
         return TaskStatus.Failure;

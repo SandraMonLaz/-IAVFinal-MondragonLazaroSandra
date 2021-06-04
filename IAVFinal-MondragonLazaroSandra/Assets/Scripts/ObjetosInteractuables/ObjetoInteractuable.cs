@@ -47,7 +47,7 @@ public class ObjetoInteractuable : MonoBehaviour
     /// </summary>
     public void VeAlDestino()
     {
-        //ModificarObjetoIA();
+        ModificarObjetoIA();
         activo = true;
         player.accionControlada = true;
 
