@@ -15,6 +15,7 @@ public class ObjetoIntMultiple : ObjetoInteractuable
         boton.onClick.AddListener(delegate { Accion1(); });
         boton.SendMessage("Accion1", SendMessageOptions.DontRequireReceiver);
 
+        boton2.onClick.RemoveAllListeners();
         boton2.gameObject.SetActive(true);
         boton2.transform.position = new Vector3(Input.mousePosition.x, Input.mousePosition.y - 80, 0);
         boton2.onClick.AddListener(delegate { Accion2(); });

@@ -20,7 +20,7 @@ public class ObjetoInteractuable : MonoBehaviour
     protected Button boton2;                //Segundo Botón para que el jugador interactua
 
 
-    protected bool activo = false;                  //Si el objeto se encuentra activo o no(se encuentra activo cuando va a ser usado)
+    [SerializeField] protected bool activo = false;                  //Si el objeto se encuentra activo o no(se encuentra activo cuando va a ser usado)
     protected static bool algoUsandose = false;     //Si existe algún interactuable en la escena siendo usado
     protected static bool algoEnCola = false;       //Si existe una acción que esté en cola o haya sido interrumpida
 
@@ -29,6 +29,7 @@ public class ObjetoInteractuable : MonoBehaviour
     /// </summary>
     public virtual void Interactuar()
     {
+        boton.onClick.RemoveAllListeners();
         boton.transform.position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
         boton.gameObject.SetActive(true);
         if (algoUsandose)
@@ -46,8 +47,7 @@ public class ObjetoInteractuable : MonoBehaviour
     /// </summary>
     public void VeAlDestino()
     {
-        Debug.Log("VE AL DESTINO");
-        ModificarObjetoIA();
+        //ModificarObjetoIA();
         activo = true;
         player.accionControlada = true;
 
