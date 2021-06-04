@@ -540,6 +540,7 @@ MonoBehaviour:
   player: {fileID: 1363154303}
   vistaPlayer: {fileID: 0}
   boton2: {fileID: 1824000602}
+  activo: 0
   textoAdvertencia: {fileID: 66966185}
   gasto: 15
   aumentoHambre: 0.6
@@ -775,6 +776,7 @@ MonoBehaviour:
   player: {fileID: 1363154303}
   vistaPlayer: {fileID: 1363154309}
   boton2: {fileID: 1824000602}
+  activo: 0
   "aumentoSue\xF1o": 0.3
   "tiempoSue\xF1o": 20
 --- !u!65 &101735333
@@ -1206,6 +1208,7 @@ MonoBehaviour:
   player: {fileID: 1363154303}
   vistaPlayer: {fileID: 1363154309}
   boton2: {fileID: 1824000602}
+  activo: 0
   aumentoDiversion: 0.2
   tiempoEjercicio: 10
 --- !u!65 &234595943
@@ -1599,6 +1602,7 @@ MonoBehaviour:
   player: {fileID: 1363154303}
   vistaPlayer: {fileID: 1363154309}
   boton2: {fileID: 1824000602}
+  activo: 0
   materials:
   - {fileID: 3875665211719597482, guid: 2a8590ff5b4779041ba5dca666ed1f57, type: 3}
   - {fileID: 2100000, guid: 111c434d738f77c47bc26d5fa931d588, type: 2}
@@ -2077,6 +2081,7 @@ MonoBehaviour:
   player: {fileID: 1363154303}
   vistaPlayer: {fileID: 1363154309}
   boton2: {fileID: 1824000602}
+  activo: 0
   aumentoHigiene: 0.3
   tiempo: 6
   texto: Lavarse manos
@@ -2273,6 +2278,7 @@ MonoBehaviour:
   player: {fileID: 1363154303}
   vistaPlayer: {fileID: 1363154309}
   boton2: {fileID: 1824000602}
+  activo: 0
   textoAdvertencia: {fileID: 66966185}
   gasto: 30
   aumentoHambre: 4
@@ -2430,6 +2436,7 @@ MonoBehaviour:
   player: {fileID: 1363154303}
   vistaPlayer: {fileID: 1363154309}
   boton2: {fileID: 1824000602}
+  activo: 0
   textoBoton2: {fileID: 1790340985}
   accion: 0
   aumentoDiversion: 0.7
@@ -4125,6 +4132,7 @@ MonoBehaviour:
   player: {fileID: 1363154303}
   vistaPlayer: {fileID: 1363154309}
   boton2: {fileID: 1824000602}
+  activo: 0
   textoAdvertencia: {fileID: 66966185}
   gasto: 10
   aumentoHambre: 0.3
@@ -5700,6 +5708,7 @@ MonoBehaviour:
   player: {fileID: 1363154303}
   vistaPlayer: {fileID: 1363154309}
   boton2: {fileID: 1824000602}
+  activo: 0
   aumentoHigiene: 0.6
   tiempo: 6
   texto: Ducharse
@@ -7508,6 +7517,7 @@ MonoBehaviour:
   player: {fileID: 1363154303}
   vistaPlayer: {fileID: 1363154309}
   boton2: {fileID: 1824000602}
+  activo: 0
   "aumentoBa\xF1o": 0.5
   tiempo: 6
 --- !u!65 &1970196594
@@ -7573,6 +7583,7 @@ MonoBehaviour:
   player: {fileID: 1363154303}
   vistaPlayer: {fileID: 1363154309}
   boton2: {fileID: 1824000602}
+  activo: 0
   aumentoHigiene: 0.2
   tiempo: 6
   texto: Lavarse manos
