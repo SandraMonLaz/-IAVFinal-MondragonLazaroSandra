@@ -46,6 +46,7 @@ public class ObjetoInteractuable : MonoBehaviour
     /// </summary>
     public void VeAlDestino()
     {
+        Debug.Log("VE AL DESTINO");
         ModificarObjetoIA();
         activo = true;
         player.accionControlada = true;

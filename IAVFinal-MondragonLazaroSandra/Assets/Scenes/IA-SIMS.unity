@@ -773,7 +773,7 @@ MonoBehaviour:
   textoBoton: {fileID: 593267494}
   navMesh: {fileID: 1363154302}
   player: {fileID: 1363154303}
-  vistaPlayer: {fileID: 0}
+  vistaPlayer: {fileID: 1363154309}
   boton2: {fileID: 1824000602}
   "aumentoSue\xF1o": 0.3
   "tiempoSue\xF1o": 20
@@ -1204,7 +1204,7 @@ MonoBehaviour:
   textoBoton: {fileID: 593267494}
   navMesh: {fileID: 1363154302}
   player: {fileID: 1363154303}
-  vistaPlayer: {fileID: 0}
+  vistaPlayer: {fileID: 1363154309}
   boton2: {fileID: 1824000602}
   aumentoDiversion: 0.2
   tiempoEjercicio: 10
@@ -1597,7 +1597,7 @@ MonoBehaviour:
   textoBoton: {fileID: 593267494}
   navMesh: {fileID: 1363154302}
   player: {fileID: 1363154303}
-  vistaPlayer: {fileID: 0}
+  vistaPlayer: {fileID: 1363154309}
   boton2: {fileID: 1824000602}
   materials:
   - {fileID: 3875665211719597482, guid: 2a8590ff5b4779041ba5dca666ed1f57, type: 3}
@@ -2075,7 +2075,7 @@ MonoBehaviour:
   textoBoton: {fileID: 593267494}
   navMesh: {fileID: 1363154302}
   player: {fileID: 1363154303}
-  vistaPlayer: {fileID: 0}
+  vistaPlayer: {fileID: 1363154309}
   boton2: {fileID: 1824000602}
   aumentoHigiene: 0.3
   tiempo: 6
@@ -2271,7 +2271,7 @@ MonoBehaviour:
   textoBoton: {fileID: 593267494}
   navMesh: {fileID: 1363154302}
   player: {fileID: 1363154303}
-  vistaPlayer: {fileID: 0}
+  vistaPlayer: {fileID: 1363154309}
   boton2: {fileID: 1824000602}
   textoAdvertencia: {fileID: 66966185}
   gasto: 30
@@ -2428,7 +2428,7 @@ MonoBehaviour:
   textoBoton: {fileID: 593267494}
   navMesh: {fileID: 1363154302}
   player: {fileID: 1363154303}
-  vistaPlayer: {fileID: 0}
+  vistaPlayer: {fileID: 1363154309}
   boton2: {fileID: 1824000602}
   textoBoton2: {fileID: 1790340985}
   accion: 0
@@ -4123,7 +4123,7 @@ MonoBehaviour:
   textoBoton: {fileID: 593267494}
   navMesh: {fileID: 1363154302}
   player: {fileID: 1363154303}
-  vistaPlayer: {fileID: 0}
+  vistaPlayer: {fileID: 1363154309}
   boton2: {fileID: 1824000602}
   textoAdvertencia: {fileID: 66966185}
   gasto: 10
@@ -5698,7 +5698,7 @@ MonoBehaviour:
   textoBoton: {fileID: 593267494}
   navMesh: {fileID: 1363154302}
   player: {fileID: 1363154303}
-  vistaPlayer: {fileID: 0}
+  vistaPlayer: {fileID: 1363154309}
   boton2: {fileID: 1824000602}
   aumentoHigiene: 0.6
   tiempo: 6
@@ -7506,7 +7506,7 @@ MonoBehaviour:
   textoBoton: {fileID: 593267494}
   navMesh: {fileID: 1363154302}
   player: {fileID: 1363154303}
-  vistaPlayer: {fileID: 0}
+  vistaPlayer: {fileID: 1363154309}
   boton2: {fileID: 1824000602}
   "aumentoBa\xF1o": 0.5
   tiempo: 6
@@ -7571,7 +7571,7 @@ MonoBehaviour:
   textoBoton: {fileID: 593267494}
   navMesh: {fileID: 1363154302}
   player: {fileID: 1363154303}
-  vistaPlayer: {fileID: 0}
+  vistaPlayer: {fileID: 1363154309}
   boton2: {fileID: 1824000602}
   aumentoHigiene: 0.2
   tiempo: 6
