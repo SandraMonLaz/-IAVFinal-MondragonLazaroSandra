@@ -20,9 +20,9 @@ public class ObjetoInteractuable : MonoBehaviour
     protected Button boton2;                //Segundo Botón para que el jugador interactua
 
 
-    [SerializeField] protected bool activo = false;                  //Si el objeto se encuentra activo o no(se encuentra activo cuando va a ser usado)
-    protected static bool algoUsandose = false;     //Si existe algún interactuable en la escena siendo usado
-    protected static bool algoEnCola = false;       //Si existe una acción que esté en cola o haya sido interrumpida
+    [SerializeField] protected bool activo = false;     //Si el objeto se encuentra activo o no(se encuentra activo cuando va a ser usado)
+    protected static bool algoUsandose = false;         //Si existe algún interactuable en la escena siendo usado
+    protected static bool algoEnCola = false;           //Si existe una acción que esté en cola o haya sido interrumpida
 
     /// <summary>
     /// Método que se llama cuando se clicla al objeto.
@@ -71,15 +71,26 @@ public class ObjetoInteractuable : MonoBehaviour
         activo = false;
         algoEnCola = false;
     }
+    /// <summary>
+    /// Cuando el agente sale del trigger dejamos de ponerlo en uso
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerExit(Collider other)
     {
         algoUsandose = false;
     }
+    /// <summary>
+    /// Si algun objeto está siendo usado por el jugador
+    /// </summary>
+    /// <returns></returns>
     public bool AlgoUsandose()
     {
         return algoUsandose && player.accionControlada;
     }
-
+    /// <summary>
+    /// pone el objeto activo en funcion de su parámetro
+    /// </summary>
+    /// <param name="t"></param>
     public void SetActivo(bool t)
     {
         activo = t;

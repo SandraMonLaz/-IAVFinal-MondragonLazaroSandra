@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Vista del agente según lo que ve en el escenario
+/// </summary>
 public class Vista : MonoBehaviour
 {
     ObjetoInteractuable baño;
@@ -11,6 +14,10 @@ public class Vista : MonoBehaviour
     ObjetoInteractuable diversion;
     ObjetoInteractuable sueño;
     Ordenador ordenador;
+
+    /// <summary>
+    /// Se coge de forma aleatoria un ojeto de cada tipo
+    /// </summary>
     void Start()
     {
         baño = GameObject.FindGameObjectWithTag("Baño").GetComponent<ObjetoInteractuable>();
@@ -20,7 +27,7 @@ public class Vista : MonoBehaviour
         sueño = GameObject.FindGameObjectWithTag("Sueño").GetComponent<ObjetoInteractuable>();
         ordenador = GameObject.FindGameObjectWithTag("Ordenador").GetComponent<Ordenador>();
     }
-    
+   //Setter y getters
     public void setBaño(ObjetoInteractuable b) { baño = b; }
     public ObjetoInteractuable getBaño() { return baño; }
     public void setHigiene(ObjetoInteractuable b) { higiene = b; }

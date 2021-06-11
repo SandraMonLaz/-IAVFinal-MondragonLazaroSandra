@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class MovimientoCamara : MonoBehaviour
 {
-
-    // Update is called once per frame
     void Update()
     {
         int deltaX = 0;

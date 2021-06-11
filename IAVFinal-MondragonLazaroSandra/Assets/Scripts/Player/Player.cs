@@ -34,6 +34,7 @@ public class Player : MonoBehaviour
     [SerializeField] double restaDiversión = 0.3;
     [SerializeField] double restaBaño = 0.9;
 
+    //Feedback al jugador
     [SerializeField] Scrollbar sliderHigiene;
     [SerializeField] Scrollbar sliderHambre;
     [SerializeField] Scrollbar sliderSueño;
@@ -61,14 +62,17 @@ public class Player : MonoBehaviour
 
         animator = GetComponent<Animator>();
     }
-    // Update is called once per frame
+    /// <summary>
+    /// Comprueba (si ha pasado el tiempo correspondiente) el estado en el que se encuentra realizando la accion 
+    /// correspondiente al estado. Comprueba sys estadísticas y actualiza el feedback
+    /// </summary>
     void Update()
     {
         tiempoTotal += Time.deltaTime;
         if(tiempoTotal - tiempoActual > tiempoTick)
         {
             tiempoActual = tiempoTotal;
-            QuitarConstantes();
+            QuitarConstantes(); 
             switch (estado)
             {
                 case Estado.idle:               Idle();             break;
@@ -93,6 +97,9 @@ public class Player : MonoBehaviour
             textoDinero.text = "" + dinero;
         }
     }
+    /// <summary>
+    /// Comprueba sus estadísticas modificando el parámetros del player
+    /// </summary>
     void CheckStats()
     {
         //Si el jugador tiene hambre o carece de diversion muere
@@ -114,11 +121,17 @@ public class Player : MonoBehaviour
         else
             restaConstante = 0.01;
     }
+    /// <summary>
+    /// estado idle
+    /// </summary>
     void Idle()
     {
         Debug.Log("Idle");
         animator.SetInteger("estado", 0);
     }
+    /// <summary>
+    /// estado andar
+    /// </summary>
     void Andar()
     {
         Debug.Log("Andar");
@@ -127,6 +140,9 @@ public class Player : MonoBehaviour
         //ANimacion Andar
         animator.SetInteger("estado", 1);
     }
+    /// <summary>
+    /// estado lavar
+    /// </summary>
     void Lavar()
     {
         Debug.Log("Lavar");
@@ -135,6 +151,9 @@ public class Player : MonoBehaviour
         //Animacion lavar
         animator.SetInteger("estado", 4);
     }
+    /// <summary>
+    /// estado de ver la tele
+    /// </summary>
     void VerTele()
     {
         Debug.Log("Ver la Tele");
@@ -145,6 +164,9 @@ public class Player : MonoBehaviour
         //Animacion ver tele
         animator.SetInteger("estado", 5);
     }
+    /// <summary>
+    /// estado de comer
+    /// </summary>
     void Comer()
     {
         Debug.Log("Comer");
@@ -214,6 +236,9 @@ public class Player : MonoBehaviour
         animator.SetInteger("estado", 8);
 
     }
+    /// <summary>
+    /// Resta las constantes al sim 
+    /// </summary>
     void QuitarConstantes()
     {
         if (higiene > 0)

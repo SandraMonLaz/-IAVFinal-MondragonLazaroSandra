@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class Dormir : ObjetoInteractuable
 {
-    [SerializeField] double aumentoSueño = 0.3;
-    [SerializeField] float tiempoSueño = 20;
+    [SerializeField] double aumentoSueño = 0.3;     //aumento de la constante vital de sueño por tick
+    [SerializeField] float tiempoSueño = 20;        //tiempo que dura la accion
 
+    /// <summary>
+    /// Modifica el texto del boton y su callback
+    /// </summary>
     public override void Interactuar()
     {
         base.Interactuar();
@@ -15,6 +18,10 @@ public class Dormir : ObjetoInteractuable
         boton.onClick.AddListener(delegate { VeAlDestino(); });
         boton.SendMessage("VeAlDestino", SendMessageOptions.DontRequireReceiver);
     }
+    /// <summary>
+    /// En caso de poder usarse usa la cama
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.name == "Player" && activo && !algoUsandose)
@@ -28,6 +35,9 @@ public class Dormir : ObjetoInteractuable
             Invoke("DejarInteractuar", tiempoSueño);
         }
     }
+    /// <summary>
+    /// Informa a la IA del objeto clicado
+    /// </summary>
     public override void ModificarObjetoIA()
     {
         vistaPlayer.setSueño(this);

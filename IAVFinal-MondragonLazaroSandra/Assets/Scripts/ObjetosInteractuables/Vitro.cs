@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class Vitro : DispensadorComida
 {
+    /// <summary>
+    /// Inicializaciond de variables
+    /// </summary>
     void Start()
     {
         texto = "Preparar comida";
         gasto = 20;
     }
-
+    /// <summary>
+    /// En caso de poder realizar la accion la realiza
+    /// </summary>
+    /// <param name="other"></param>
     void OnTriggerStay(Collider other)
     {
         if (other.gameObject.name == "Player" && activo && !algoUsandose)
@@ -22,6 +28,9 @@ public class Vitro : DispensadorComida
             Invoke("DejarInteractuar", tiempo);
         }
     }
+    /// <summary>
+    /// Informa a la IA del objeto clicado
+    /// </summary>
     public override void ModificarObjetoIA()
     {
         vistaPlayer.setHambre(this);

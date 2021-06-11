@@ -85,6 +85,10 @@ namespace BehaviorDesigner.Runtime.Tasks
             return TaskStatus.Success;
         }
 
+        /// <summary>
+        /// Manda al agente al destino donde se encuentre el objeto interactuable o
+        /// </summary>
+        /// <param name="o"></param>
         void MandarALugar(ObjetoInteractuable o)
         {
             navMesh.destination = o.transform.position;

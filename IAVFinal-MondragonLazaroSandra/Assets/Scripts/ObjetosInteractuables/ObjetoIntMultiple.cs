@@ -9,6 +9,9 @@ public class ObjetoIntMultiple : ObjetoInteractuable
     protected Text textoBoton2;          //Texto del segundo botón
 
     public int accion;
+    /// <summary>
+    /// Modifica el texto de los botones y sus respectivos callbacks asociacidos a los métodos accion1 y accion2
+    /// </summary>
     public override void Interactuar()
     {
         base.Interactuar();
@@ -21,12 +24,18 @@ public class ObjetoIntMultiple : ObjetoInteractuable
         boton2.onClick.AddListener(delegate { Accion2(); });
         boton2.SendMessage("Accion2", SendMessageOptions.DontRequireReceiver);
     }
+    /// <summary>
+    /// Callback para el primer botón. Manda al agente a un destino y desactiva el botón
+    /// </summary>
     void Accion1()
     {
         accion = 1;
         boton2.gameObject.SetActive(false);
         VeAlDestino();
     }
+    /// <summary>
+    /// Callback para el segundo botón. Manda al agente a un destino y desactiva el botón
+    /// </summary
     void Accion2()
     {
         accion = 2;

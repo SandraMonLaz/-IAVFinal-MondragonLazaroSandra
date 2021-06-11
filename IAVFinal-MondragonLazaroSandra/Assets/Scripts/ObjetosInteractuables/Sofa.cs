@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class Sofa : ObjetoInteractuable
 {
-    [SerializeField] Material[] materials;    //Dos materiales
-    [SerializeField] Renderer tv;    //Dos materiales
-    [SerializeField] double aumentoDiversion;    
-    [SerializeField] float tiempo;
+    [SerializeField] Material[] materials;          //dos materiales para la tv(feedback)
+    [SerializeField] Renderer tv;                   //renderer de la television
+    [SerializeField] double aumentoDiversion;       //aumento de diversion por cada tick
+    [SerializeField] float tiempo;                  //tiempo que dura la accion
+    /// <summary>
+    /// Modifica los textos y callback del boton
+    /// </summary>
     public override void Interactuar()
     {
         base.Interactuar();
@@ -16,6 +19,11 @@ public class Sofa : ObjetoInteractuable
         boton.onClick.AddListener(delegate { VeAlDestino(); });
         boton.SendMessage("VeAlDestino", SendMessageOptions.DontRequireReceiver);
     }
+    /// <summary>
+    /// En caso de poder realiza la accion de ver la tele cambiando el material de esta 
+    /// para mayor feedback
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.name == "Player" && activo && !algoUsandose)
@@ -29,12 +37,17 @@ public class Sofa : ObjetoInteractuable
             Invoke("DejarDeVer", tiempo);
         }
     }
-
+    /// <summary>
+    /// Deja de realizar la acción y "apaga" la tele
+    /// </summary>
     void DejarDeVer()
     {
         base.DejarInteractuar();
         tv.material = materials[0];
     }
+    /// <summary>
+    /// Informa a la IA del objeto clicado
+    /// </summary>
     public override void ModificarObjetoIA()
     {
         vistaPlayer.setDiversion(this);

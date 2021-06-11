@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class ObjetoHigiene : ObjetoInteractuable
 {
-    [SerializeField] double aumentoHigiene = 2;
-    [SerializeField] float tiempo = 5;
-    [SerializeField] string texto = "Lavarse manos";
+    [SerializeField] double aumentoHigiene = 2;         //aumento de la constante vital de higiene por tick
+    [SerializeField] float tiempo = 5;                  //tiempo que realiza la accion
+    [SerializeField] string texto = "Lavarse manos";    //texto que aparece en el boton
 
-
-        public override void Interactuar()
+    /// <summary>
+    /// Modifica el texto del boton y su callback
+    /// </summary>
+    public override void Interactuar()
     {
         base.Interactuar();
         textoBoton.text = texto;
@@ -17,6 +19,10 @@ public class ObjetoHigiene : ObjetoInteractuable
         boton.onClick.AddListener(delegate { VeAlDestino(); });
         boton.SendMessage("VeAlDestino", SendMessageOptions.DontRequireReceiver);
     }
+    /// <summary>
+    /// En caso de poder usarse va a lavarse
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.name == "Player" && activo && !algoUsandose)
@@ -28,6 +34,9 @@ public class ObjetoHigiene : ObjetoInteractuable
             Invoke("DejarInteractuar", tiempo);
         }
     }
+    /// <summary>
+    /// Informa a la IA del objeto clicado
+    /// </summary>
     public override void ModificarObjetoIA()
     {
         vistaPlayer.setHigiene(this);
