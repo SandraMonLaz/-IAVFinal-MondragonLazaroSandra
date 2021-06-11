@@ -3,6 +3,7 @@ _Sandra Mondragón Lázaro_
 
 * [Vídeo](https://drive.google.com/file/d/1njvJLcsTY86o6CfP7B2nyGWn5TLk_M8M/view?usp=sharing)
 * [Build](https://drive.google.com/file/d/1XWKMFxJV_5CHYaYFPzRZHo3eJYveRHeO/view?usp=sharing)
+> Se va a realizar un prototipo de simulación de vida basandonos en el conocido juego de los sims.
 > El prototipo que se va a desarrollar constará de un entorno interactuable. Este entorno podrá ser 
 clicable por con él, con el fin de poder usar las funciones que le permitan los objetos del entorno 
 y que el sim realice la acción que el jugador decida.  
